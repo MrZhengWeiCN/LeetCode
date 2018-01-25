@@ -1,6 +1,6 @@
 package tree;
 
-import org.junit.Test;
+
 
 public class SumLeafNum {
 
@@ -36,18 +36,5 @@ public class SumLeafNum {
         return fun(root.left, sum) + fun(root.right, sum);
     }
 
-	@Test
-	public void test() {
-		TreeNode node = new TreeNode(1);
-		TreeNode left = new TreeNode(2);
-		TreeNode rigth = new TreeNode(3);
-		TreeNode rrigth = new TreeNode(4);
-		TreeNode rligth = new TreeNode(5);
-		rigth.left = rligth;
-		rigth.right = rrigth;
-		node.left = left;
-		node.right = rigth;
-		int s = sumNumbers(node);
-		System.out.println(s);
-	}
+
 }
