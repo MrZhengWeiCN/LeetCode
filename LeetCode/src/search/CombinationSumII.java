@@ -31,8 +31,14 @@ public class CombinationSumII {
     }
     public static void main(String[] args){
         CombinationSumII combinationSumII = new CombinationSumII();
-        int[] candidates = {10,1,2,7,6,1,5};
-        ArrayList<ArrayList<Integer>> result = combinationSumII.combinationSum2(candidates,8);
-        System.out.print(result.size());
+        int[] candidates = { 1,2,3,4,5,6,7 };
+        ArrayList<ArrayList<Integer>> result = combinationSumII.combinationSum2(candidates,12);
+        for (ArrayList<Integer> arrayList : result) {
+			System.out.print("[");
+			for (Integer integer : arrayList) {
+				System.out.print(integer + ",");
+			}
+			System.out.println("]");
+		}
     }
 }
